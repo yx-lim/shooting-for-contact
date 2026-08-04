@@ -1,0 +1,13 @@
+converted from trajectories/go2/hopturn_go2_STMR_resampled_50Hz.csv by trajectories/wtw_to_qpos.py
+frames  : 181 at dt = 0.02 s (3.600 s)
+model   : models/unitree_go2/scene.xml (nq = 19)
+joints  : base1, shoulder1, elbow1, base2, shoulder2, elbow2, base3, shoulder3, elbow3, base4, shoulder4, elbow4
+          -> FL_hip, FL_thigh, FL_calf, FR_hip, FR_thigh, FR_calf, RL_hip, RL_thigh, RL_calf, RR_hip, RR_thigh, RR_calf
+rezero  : False
+pz_offset: 0.0
+FK check: foot offset from the base (e<i>), full base frame
+  scatter (mapping error)  mean   0.00 mm, max   0.04 mm
+  FL constant offset  [  +0.00   +0.00   +0.00] mm  (|.| =  0.00 mm)
+  FR constant offset  [  +0.00   -0.00   +0.00] mm  (|.| =  0.00 mm)
+  RL constant offset  [  -0.00   -0.00   +0.00] mm  (|.| =  0.00 mm)
+  RR constant offset  [  +0.00   +0.00   -0.00] mm  (|.| =  0.00 mm)

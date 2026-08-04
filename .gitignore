@@ -1,0 +1,3 @@
+# file formats
+*.npz
+MUJOCO_LOG.TXT
