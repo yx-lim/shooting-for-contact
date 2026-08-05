@@ -1,3 +1,12 @@
 # file formats
 *.npz
 MUJOCO_LOG.TXT
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Python tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
