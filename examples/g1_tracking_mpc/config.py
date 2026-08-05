@@ -293,6 +293,24 @@ SLIDE = MPCTrackingConfig(
     max_iter=20,
 )
 
+SLIDEKNEE = MPCTrackingConfig(
+    name="slideknee",
+    traj_dir=("g1", "animation", "slideknee_3f"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
 FRONT_FLIP = MPCTrackingConfig(
     name="frontflip",
     traj_dir=("g1", "animation", "frontflip_40f"),
@@ -337,6 +355,7 @@ CONFIGS = {
     "stand": STAND,
     "stand1": STAND1,
     "slide": SLIDE,
+    "slideknee": SLIDEKNEE,
     "frontflip": FRONT_FLIP,
     "moonwalk": MOONWALK,
 }
