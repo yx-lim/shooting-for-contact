@@ -293,9 +293,99 @@ SLIDE = MPCTrackingConfig(
     max_iter=20,
 )
 
+SLIDEFLOAT = MPCTrackingConfig(
+    name="slidefloat",
+    traj_dir=("g1", "animation", "slidefloat_20f"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
 SLIDEKNEE = MPCTrackingConfig(
     name="slideknee",
     traj_dir=("g1", "animation", "slideknee_3f"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+KNEEL = MPCTrackingConfig(
+    name="kneel",
+    traj_dir=("g1", "animation", "kneel_30f"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+KNEEL1 = MPCTrackingConfig(
+    name="kneel1",
+    traj_dir=("g1", "animation", "kneel1_20f"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+KNEEL2 = MPCTrackingConfig(
+    name="kneel2",
+    traj_dir=("g1", "animation", "kneel2_20f"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+HOP = MPCTrackingConfig(
+    name="hop",
+    traj_dir=("g1", "animation", "hop_20f"),
     track_state=True,
     track_body=True,
     condim=3,
@@ -329,6 +419,43 @@ FRONT_FLIP = MPCTrackingConfig(
     max_iter=20,
 )
 
+FRONT_FLIP1 = MPCTrackingConfig(
+    name="frontflip1",
+    traj_dir=("g1", "animation", "frontflip1"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+FRONT_FLIP2 = MPCTrackingConfig(
+    name="frontflip2",
+    traj_dir=("g1", "animation", "frontflip2"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+
 MOONWALK = MPCTrackingConfig(
     name="moonwalk",
     traj_dir=("g1", "animation", "moonwalk_40f"),
@@ -355,7 +482,14 @@ CONFIGS = {
     "stand": STAND,
     "stand1": STAND1,
     "slide": SLIDE,
+    "slidefloat": SLIDEFLOAT,
     "slideknee": SLIDEKNEE,
+    "kneel": KNEEL,
+    "kneel1": KNEEL1,
+    "kneel2": KNEEL2,
+    "hop": HOP,
     "frontflip": FRONT_FLIP,
+    "frontflip1": FRONT_FLIP1,
+    "frontflip2": FRONT_FLIP2,
     "moonwalk": MOONWALK,
 }
