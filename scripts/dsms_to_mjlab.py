@@ -18,8 +18,8 @@ mjlab CSV layout:
 The output CSV is headerless because mjlab loads it with numpy.loadtxt().
 
 python scripts/dsms_to_mjlab.py \
-  examples/g1_tracking_mpc/g1_tracking_stand1.npz \
-  --output-csv examples/g1_tracking_mpc/g1_tracking_stand1_mjlab.csv \
+  examples/g1_tracking_mpc/g1_tracking_lunges.npz \
+  --output-csv examples/g1_tracking_mpc/g1_tracking_lunges_mjlab.csv \
   --normalize-quaternions
 
 """
