@@ -686,6 +686,24 @@ TWERK = MPCTrackingConfig(
     max_iter=20,
 )
 
+FACEDOWN = MPCTrackingConfig(
+    name="facedown",
+    traj_dir=("g1", "animation", "facedown"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
 
 CONFIGS = {
     "jump": JUMP,
@@ -717,4 +735,5 @@ CONFIGS = {
     "pushup2": PUSHUP2,
     "squat": SQUAT,
     "twerk": TWERK,
+    "facedown": FACEDOWN,
 }
