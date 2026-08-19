@@ -510,6 +510,24 @@ LUNGES2 = MPCTrackingConfig(
     max_iter=20,
 )
 
+LUNGES3 = MPCTrackingConfig(
+    name="lunges3",
+    traj_dir=("g1", "animation", "lunges3"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
 CRAWLSTAND = MPCTrackingConfig(
     name="crawlstand",
     traj_dir=("g1", "animation", "crawlstand"),
@@ -722,6 +740,41 @@ FACEDOWN_REVERSED = MPCTrackingConfig(
     max_iter=20,
 )
 
+FACEDOWN1 = MPCTrackingConfig(
+    name="facedown1",
+    traj_dir=("g1", "animation", "facedown1"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
+
+CROUCH = MPCTrackingConfig(
+    name="crouch",
+    traj_dir=("g1", "animation", "crouch"),
+    track_state=True,
+    track_body=True,
+    condim=3,
+    friction=[1.0, 0.005, 0.0001],
+    friction_cone="elliptic",
+    Rrate=1e-2,
+    H=30,
+    M=15,
+    sim_dt=0.01,
+    node_dt=0.02,
+    mpc_dt=0.02,
+    max_iter_initial=20,
+    max_iter=20,
+)
 
 CONFIGS = {
     "jump": JUMP,
@@ -743,6 +796,7 @@ CONFIGS = {
     "moonwalk": MOONWALK,
     "lunges": LUNGES,
     "lunges2": LUNGES2,
+    "lunges3": LUNGES3,
     "crawlstand": CRAWLSTAND,
     "crawlstand1": CRAWLSTAND1,
     "worm1": WORM1,
@@ -754,5 +808,7 @@ CONFIGS = {
     "squat": SQUAT,
     "twerk": TWERK,
     "facedown": FACEDOWN,
+    "facedown1": FACEDOWN1,
     "facedown_rev": FACEDOWN_REVERSED,
+    "crouch": CROUCH,
 }
